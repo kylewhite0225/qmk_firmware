@@ -8,7 +8,7 @@ F_USB = $(F_CPU)
 # Interrupt driven control endpoint task(+60)
 OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 # Suspend power to board on sleep/shutdown
-OPT_DEFS += -DNO_SUSPEND_POWER_DOWN
+# OPT_DEFS += -DNO_SUSPEND_POWER_DOWN
 
 SRC += ssd1306.c
 
@@ -28,6 +28,7 @@ NKRO_ENABLE ?= yes		# USB Nkey Rollover - if this doesn't work, see here: https:
 BACKLIGHT_ENABLE ?= no  # Enable keyboard backlight functionality
 AUDIO_ENABLE ?= no
 RGBLIGHT_ENABLE ?= yes
+ # WAIT_FOR_USB ?= yes  // didn't work
 
 ENCODER_ENABLE = yes
 OLED_DRIVER_ENABLE = yes
