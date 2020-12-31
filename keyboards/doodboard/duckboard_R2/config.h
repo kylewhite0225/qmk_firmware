@@ -55,6 +55,9 @@
 #define RGBLED_NUM 8    // Number of LEDs
 #endif
 
+// If defined, RGB lighting will be switched off when host goes to sleep.
+#define RGBLIGHT_SLEEP
+
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
