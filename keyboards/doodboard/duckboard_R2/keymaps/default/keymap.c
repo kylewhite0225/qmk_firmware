@@ -121,3 +121,7 @@ void keyboard_post_init_user(void) {
   //debug_keyboard=true;
   //debug_mouse=true;
 }
+
+void suspend_power_down_user(void) {
+    oled_off();
+}
